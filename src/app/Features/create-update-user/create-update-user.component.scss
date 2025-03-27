@@ -1,0 +1,105 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .user-create-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-color: #f4f4f4;
+  
+    p-card {
+      width: 600px;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 0.5s ease-in-out;
+  
+      h2 {
+        text-align: center;
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        color: #333;
+      }
+  
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+  
+        .field-box {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          padding: 1rem;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          background: #f9f9f9;
+          transition: 0.3s;
+  
+          &:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border-color: #007bff;
+          }
+  
+          label {
+            font-weight: bold;
+            color: #333;
+          }
+  
+          input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+  
+            &:focus {
+              border-color: #007bff;
+              outline: none;
+            }
+          }
+  
+          .error {
+            color: red;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+          }
+        }
+  
+        .button-group {
+          display: flex;
+          justify-content: center;  /* Center the buttons */
+          gap: 1rem;
+  
+          button {
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 500;
+  
+            &.p-button-success {
+              background-color: #28a745;
+              color: #fff;
+  
+              &:hover {
+                background-color: #218838;
+              }
+            }
+  
+            &.p-button-secondary {
+              background-color: #6c757d;
+              color: #fff;
+  
+              &:hover {
+                background-color: #5a6268;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

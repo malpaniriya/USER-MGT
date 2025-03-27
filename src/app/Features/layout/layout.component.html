@@ -1,0 +1,28 @@
+
+<div class="layout">
+  <aside class="sidebar">
+    <div class="sidebar-title">User Management Portal</div>
+    <ul class="sidebar-links">
+      <li><a routerLink="/dashboard" routerLinkActive="active">HOME</a></li>
+      <li><a routerLink="/user-list" routerLinkActive="active">USER LIST</a></li>
+      <li><a routerLink="/user-details" routerLinkActive="active">USER DETAILS</a></li> 
+      <li><a routerLink="/create-update-user" routerLinkActive="active">CREATE NEW USER</a></li>
+    </ul>
+  </aside>
+
+  <div class="main-content">
+    <nav class="navbar">
+      <div class="navbar-title">
+        Welcome {{ userName }}
+      </div>
+  
+      <img *ngIf="userAvatar" [src]="userAvatar" alt="User Avatar" class="profile-avatar">
+
+      <button (click)="logout()" class="logout-btn">Logout</button>
+    </nav>
+
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
