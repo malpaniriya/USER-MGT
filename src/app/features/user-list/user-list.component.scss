@@ -1,0 +1,122 @@
+
+// p-table {
+//   width: 100%;
+//   border-collapse: collapse;
+//   font-family: Arial, sans-serif;
+// }
+
+
+// th, td {
+//   padding: 12px 15px;
+//   text-align: left;
+//   border-bottom: 1px solid #ddd;
+// }
+
+// th {
+//   background-color: #f4f4f4;
+//   font-weight: bold;
+// }
+
+
+// .avatar-img {
+//   width: 50px;
+//   height: 50px;
+//   border-radius: 50%;
+//   object-fit: cover;
+// }
+
+
+.action-buttons {
+    display: flex;                
+    justify-content: flex-start;  
+    align-items: center;          
+    gap: 15px;                    
+  }
+  
+  
+  button {
+    min-width: 90px;              
+    padding: 8px 16px;            
+    font-size: 14px;
+    transition: background 0.3s;
+    border-radius: 5px;           
+    border: none;
+    cursor: pointer;
+  }
+  
+  .p-button-success {
+    background-color: #28a745;
+    color: #fff;
+  
+    &:hover {
+      background-color: #218838;
+    }
+  }
+  .p-button-info{
+    background-color: yellow;
+    color: black;
+  
+    &:hover{
+      background-color: white;
+    }
+  }
+  
+  
+  .p-button-danger {
+    background-color: #dc3545;
+    color: #fff;
+  
+    &:hover {
+      background-color: #c82333;
+    }
+  }
+  
+  
+  .user-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+  
+  
+  .user-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+    transition: 0.2s;
+  }
+  .avatar-img {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  input {
+    width: 100%;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }

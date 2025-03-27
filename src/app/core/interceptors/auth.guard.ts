@@ -1,5 +1,5 @@
-import { CanActivateFn } from '@angular/router';
+import { HttpInterceptorFn } from '@angular/common/http';
 
-export const authGuard: CanActivateFn = (route, state) => {
-  return true;
+export const authInterceptor: HttpInterceptorFn = (req, next) => {
+  return next(req);
 };

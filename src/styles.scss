@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+/* Ensure no horizontal scroll */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;  /* Prevent horizontal scrolling */
+  }
+  
+  /* Main container to fit within the viewport */
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;       /* Full viewport height */
+    width: 100vw;            /* Full viewport width */
+    overflow: hidden;         /* Hide any overflow */
+    box-sizing: border-box;
+  }
+  
+  /* Ensure content doesn't overflow */
+  .main-content {
+    flex: 1;                 /* Take up remaining space */
+    max-width: 100vw;         /* Prevent horizontal overflow */
+    overflow: auto;           /* Allow vertical scroll only if needed */
+    box-sizing: border-box;
+  }
+  
+  /* Footer stays at bottom */
+  footer {
+    width: 100%;
+    height: 31px;
+    box-sizing: border-box;
+    position: relative;       /* Prevents overlapping */
+  }
