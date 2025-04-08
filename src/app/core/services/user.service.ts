@@ -65,31 +65,7 @@ export class UserService {
   }
 
   
-  // editUser(userId: number, updatedUser: Partial<User>): Observable<User> {
-  //   const url = `${this.apiUrl}/${userId}`;
-
-  //   const localUserIndex = this.localUsers.findIndex(u => u.id === userId);
-
-  //   if (localUserIndex > -1) {
-  //     this.localUsers[localUserIndex] = { ...this.localUsers[localUserIndex], ...updatedUser };
-  //     alert(`Local User ID ${userId} updated successfully!`);
-  //     return of(this.localUsers[localUserIndex]);
-  //   }
-
   
-  //   return this.http.put<User>(url, updatedUser).pipe(
-  //     tap((updatedApiUser) => {
-        
-  //       const apiUserIndex = this.localUsers.findIndex(u => u.id === userId);
-  //       if (apiUserIndex > -1) {
-  //         this.localUsers[apiUserIndex] = { ...this.localUsers[apiUserIndex], ...updatedApiUser };
-  //       } else {
-          
-  //         this.localUsers.push(updatedApiUser);
-  //       }
-  //     })
-  //   );
-  // }
   editUser(userId: number, updatedUser: Partial<User>): Observable<User> {
     const url = `${this.apiUrl}/${userId}`;
   
